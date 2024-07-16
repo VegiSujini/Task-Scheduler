@@ -9,7 +9,7 @@ public class TaskSchedulerMain {
         taskScheduler.addTask(new Task("task 2"));
         taskScheduler.addTask(new Task("task 3"));
 
-        Comsumer<Task> taskExecutor = task->{
+        Consumer<Task> taskExecutor = task->{
             try {
                 TimeUnit.SECONDS.sleep(1);
                 if ("task 2".equals(task.getName())) {
